@@ -1,6 +1,10 @@
 \documentclass[12pt]{exam}
 \usepackage{sinhala}
 
+%################ if-answers-should-be-printed #########%
+\printanswers
+%################ if-answers-should-be-printed #########%
+
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb}
 \usepackage{multicol}
@@ -58,16 +62,16 @@
 
 \question[2] නොගැළපෙන පිළිතුර තෝරන්න.
 \begin{choices}
-\choice නිමේශ්
 \choice හිමේශ්
 \choice ආකාෂ්
 \choice සෝමරතන
 \choice ජෙරාඩ්
+\CorrectChoice නිමේශ්
 \end{choices}
 
 \question[2] නොගැළපෙන පිළිතුර තෝරන්න.
 \begin{oneparchoices}
-\choice නිමේශ්
+\CorrectChoice නිමේශ්
 \choice හිමේශ්
 \choice ආකාෂ්
 \choice සෝමරතන
@@ -77,18 +81,18 @@
 \question[3] නිවැරැදි පිළිතුරු සලකුණු කරන්න.
 \addpoints
 \begin{checkboxes}
-\choice $2+2=4$
+\CorrectChoice $2+2=4$
 \choice $\frac{d}{dx} (x^2+1) = 2x+1$
-\choice හඳට පොලු ගැසිය හැකිය.
+\CorrectChoice හඳට පොලු ගැසිය හැකිය.
 \end{checkboxes}
-
+% {මෙහිදී නොගැළපෙන පිළිතුර ඉතා පරිස්සමෙන් තෝරා ගත යුතු ම වේ.}
 {%
 \checkboxchar{$\Box$} % changing checkbox style locally
 \question[3] නිවැරැදි පිළිතුරු සලකුණු කරන්න.
 \addpoints
 \begin{checkboxes}
 \choice $2+2=4$
-\choice $\frac{d}{dx} (x^2+1) = 2x+1$
+\CorrectChoice $\frac{d}{dx} (x^2+1) = 2x+1$
 \choice හඳට පොලු ගැසිය හැකිය.
 \end{checkboxes}
 }%
@@ -107,7 +111,7 @@
 \choice S
 \choice Ba
 \choice Pb
-\choice U
+\CorrectChoice U
 \choice Pu
 \end{choices}
 \end{multicols}
@@ -115,7 +119,11 @@
 
 \question[10]
 එක ඡේදයක් පමණක් භාවිත කරමින් පෘථිවිය ගෝලාකාර බැව් පැහැදිළි කරන්න.
-\makeemptybox{2in}
+\begin{solutionbox}{2in}
+මේ ප්‍රශ්න පත්‍රයේ පෘථිවිය ග‌ෝලාකාර බැව් පැහැදිළි කරන්න යැයි ඇසීමම ඒ සනාථ කරන්නේ 
+නොවේද, බමුණ?
+    
+\end{solutionbox}
 
 \question[20]
 සම්‍යක් ප්‍රවාද යනුවෙන් අදහස් කරන්නේ කුමක්දැ යි උදාහරණ සහිතව පැහැදිළි කරන්න.
@@ -132,6 +140,13 @@
 \question[20]
 අපාරගම්‍ය පටලයක් යනු කුමක් ද?
 \fillwithdottedlines{8em}
+
+\question[10]
+ස්කන්ධය $m$ වූ වීදුරු බෝලයක්, ස්වභාවික දිග $l$ වූ සැහැල්ලු ප්‍රත්‍යස්ථ තන්තුවකින් අචල
+$A$ ලක්ෂ්‍යයකට ගැට ගසා ඇත. අංශුව $A$ ලක්ෂ්‍යයෙහි නිශ්චලතාවයේ සිට මුදා හරිනු
+ලැබ, ක්ෂණික නිශ්චලතාවයට එළඹීමට පෙර $2l$ දුරක් වැටේ. තන්තුවේ ප්‍රත්‍යස්ථතා මාපාංකය
+$4mg$ බවත්, වීදුරු බෝලය $\sqrt{l/g}\{2\sqrt2+\pi -\cos^{-1}(1/3)\}$ කාලයකට පසු 
+$A$ වෙත ආපසු එන බව පෙන්වන්න.
 
 \end{questions}
 
