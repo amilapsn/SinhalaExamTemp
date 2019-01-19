@@ -1,0 +1,138 @@
+\documentclass[12pt]{exam}
+\usepackage{sinhala}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+
+\newcommand{\class}{සංයුක්ත ගණිතය I}
+\newcommand{\term}{දෙවැනි වාරය}
+\newcommand{\examnum}{I කොටස}
+\newcommand{\examdate}{\today}
+\newcommand{\timelimit}{පෑ එකයි}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - පිටු \numpages\ න් \thepage}{\examdate}
+\runningheadrule
+
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{නම:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} & \textbf{පංතිය:} & \makebox[2in]{\hrulefill}\\
+\textbf{\examnum} & \textbf{පංති අංකය:} & \makebox[2in]{\hrulefill}\\
+\textbf{\examdate} &&\\
+\textbf{කාලය: \timelimit} &&
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+
+මෙම ප්‍රශ්න පත්‍රය පිටු \numpages\ කින් (මෙම පිටුවද ඇතුළුව) හා ප්‍රශ්න \numquestions\ කින් සමන්විතයි.\\
+ලබා ගත හැකි මුළු ලකුණු සංඛ්‍යාව \numpoints\ ක් වේ.
+
+හැඳින්වීමේ ඉතිරි කොටස මෙතැනින් සම්පූර්ණ කරන්න. හැඳින්වීමේ ඉතිරි කොටස මෙතැනින් සම්පූර්ණ කරන්න. හැඳින්වීමේ ඉතිරි කොටස මෙතැනින් සම්පූර්ණ කරන්න.
+
+\begin{center}
+ලකුණු වගුව (ගුරුවරයාගේ භාවිතය සඳහා පමණි.)\\
+\addpoints
+\gradetable[v][questions]
+\end{center}
+
+\noindent
+\rule[2ex]{\textwidth}{2pt}
+
+\begin{questions}
+
+\question[1] $2+2$ අගයන්න.
+\addpoints
+
+\question[20] $f(x)=3x^3+2x^2+x+1$ ශ්‍රිතය සලකන්න.
+\noaddpoints % to omit double points count
+\begin{parts}
+\part[10] $f'(x)$ සොයන්න.
+\part[10] $f''(x)$ සොයන්න.
+\end{parts}
+\addpoints
+
+\question[2] නොගැළපෙන පිළිතුර තෝරන්න.
+\begin{choices}
+\choice නිමේශ්
+\choice හිමේශ්
+\choice ආකාෂ්
+\choice සෝමරතන
+\choice ජෙරාඩ්
+\end{choices}
+
+\question[2] නොගැළපෙන පිළිතුර තෝරන්න.
+\begin{oneparchoices}
+\choice නිමේශ්
+\choice හිමේශ්
+\choice ආකාෂ්
+\choice සෝමරතන
+\choice ජෙරාඩ්
+\end{oneparchoices}
+
+\question[3] නිවැරැදි පිළිතුරු සලකුණු කරන්න.
+\addpoints
+\begin{checkboxes}
+\choice $2+2=4$
+\choice $\frac{d}{dx} (x^2+1) = 2x+1$
+\choice හඳට පොලු ගැසිය හැකිය.
+\end{checkboxes}
+
+{%
+\checkboxchar{$\Box$} % changing checkbox style locally
+\question[3] නිවැරැදි පිළිතුරු සලකුණු කරන්න.
+\addpoints
+\begin{checkboxes}
+\choice $2+2=4$
+\choice $\frac{d}{dx} (x^2+1) = 2x+1$
+\choice හඳට පොලු ගැසිය හැකිය.
+\end{checkboxes}
+}%
+
+{%
+% changing choice items style locally
+\renewcommand*\thechoice{\arabic{choice}} 
+\renewcommand*\choicelabel{\thechoice)}
+%
+\question[2] පරමාණුක ක්‍රමාංකය 92 වන මූලද්‍රව්‍යය වන්නේ:
+\begin{multicols}{2}
+\begin{choices}
+\choice H
+\choice O
+\choice F
+\choice S
+\choice Ba
+\choice Pb
+\choice U
+\choice Pu
+\end{choices}
+\end{multicols}
+}%
+
+\question[10]
+එක ඡේදයක් පමණක් භාවිත කරමින් පෘථිවිය ගෝලාකාර බැව් පැහැදිළි කරන්න.
+\makeemptybox{2in}
+
+\question[20]
+සම්‍යක් ප්‍රවාද යනුවෙන් අදහස් කරන්නේ කුමක්දැ යි උදාහරණ සහිතව පැහැදිළි කරන්න.\ldots
+\makeemptybox{\fill}
+
+\newpage
+
+\question[20]
+අධ්‍යාහෘත ශ්‍රිතයක් යනු කුමක් ද?\ldots
+\fillwithlines{\fill}
+
+\newpage
+
+\question[20]
+අපාරගම්‍ය පටලයක් යනු කුමක් ද?\ldots
+\fillwithdottedlines{8em}
+
+\end{questions}
+
+\end{document}

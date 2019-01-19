@@ -1,0 +1,10 @@
+*.aux
+*.lof
+*.log
+*.lot
+*.gnuplot
+*.table
+*.gz
+*.toc
+*\(busy\)
+*.out

@@ -1,0 +1,110 @@
+\ProvidesFile{sinhala.sty}
+\ProvidesPackage{sinhala}
+
+% mathematics and figures
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+
+% plot
+\usepackage{pgfplots}
+\usepackage{array}
+
+% fonts
+\usepackage{fontspec}
+% \usepackage[Sinhala,Latin]{ucharclasses}
+\setmainfont{Iskoola Pota}
+
+% @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+% the following fonts were not used due to:
+% - bracket problem
+% - mismatch with brackets
+% Download these and put in the hierarchy
+% \setmainfont{NotoSerifSinhala}[
+%   Path=fonts/NotoSerifSinhala/,
+%   UprightFont={NotoSerifSinhala-Regular},
+%   ItalicFont={NotoSerifSinhala-Regular},
+% 	BoldFont={NotoSerifSinhala-Bold},
+%   NFSSFamily=sinhalaserif,
+% ]
+% \setsansfont{NotoSansSinhala}[
+%   Path=fonts/NotoSansSinhala/,
+%   UprightFont={NotoSansSinhala-Regular},
+%   ItalicFont={NotoSansSinhala-Regular},
+% 	BoldFont={NotoSansSinhala-Bold},
+%   NFSSFamily=sinhalasans,
+% ]
+
+% \newfontfamily\latinserif{NotoSerif}[
+%   Path=fonts/NotoSerif/,
+%   UprightFont={NotoSerif-Regular},
+%   ItalicFont={NotoSerif-Italic},
+%   BoldFont={NotoSerif-Bold},
+%   BoldItalicFont={NotoSerif-BoldItalic},
+%   NFSSFamily=latinserif
+% ]
+% \newfontfamily\latinsans{NotoSans}[
+%   Path=fonts/NotoSans/,
+%   UprightFont={NotoSans-Regular},
+%   ItalicFont={NotoSans-Italic},
+%   BoldFont={NotoSans-Bold},
+%   BoldItalicFont={NotoSans-BoldItalic},
+%   NFSSFamily=latinsans
+% ]
+
+
+% \setDefaultTransitions{\switchto{sinhala}}{}
+% \setTransitionsForLatin{\switchto{latin}}{}
+
+% \ExplSyntaxOn
+% \NewDocumentCommand{\switchto}{m}
+%  {
+%   \str_case_e:vnF {f@family}
+%    {
+%     { latinsans } { \fontfamily{#1sans}\selectfont }
+%     { sinhalasans } { \fontfamily{#1sans}\selectfont }
+%    }
+%    { \fontfamily{#1serif}\selectfont }
+%  }
+% \cs_generate_variant:Nn \str_case_e:nnF { v }
+% \ExplSyntaxOff
+
+% @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+% exam specific translations
+% \pointpoints{ලකුණු}{ලකුණු}
+\pointname{}
+\pointformat{(ලකුණු \thepoints\ යි.)}
+\vqword{ප්‍රශ්නය}
+\vpgword{පිටුව}
+\vpword{ලකුණු}
+\vsword{ලබා ගත් ලකුණු}
+\vtword{එකතුව}
+
+\renewcommand\contentsname{පටුන}
+\renewcommand\listfigurename{රූපාවලිය}
+\renewcommand\listtablename{වගුවාවලිය}
+\renewcommand\indexname{සූචිය}
+\renewcommand\figurename{රූපය}
+\renewcommand\tablename{වගුව}
+\renewcommand\partname{කොටස}
+\renewcommand\appendixname{උපග්‍රන්ථය}
+\def\today{\ifcase\month\or
+  ජනවාරි\or පෙබරවාරි\or මාර්තු\or අප්‍රේල්\or මැයි\or ජූනි\or
+  ජූලි\or අගෝස්තු\or සැප්තැම්බර්\or ඔක්තෝම්බර්\or නොවැම්බර්\or දෙසැම්බර්\fi
+  \space\number\day, \number\year}
+
+% \tolerance=1
+% \emergencystretch=\maxdimen
+% \hyphenpenalty=10000
+% \hbadness=10000
+
+% for links
+\usepackage{hyperref}
+
+\hypersetup{linktoc=all,
+            colorlinks=true}
+
+% exam translations
